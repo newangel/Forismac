@@ -252,7 +252,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>185</real>
+								<real>308</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -268,16 +268,21 @@
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
+								<string>1C37FBAC04509CD000000102</string>
+								<string>ADBB805B107E1B7D00C00CE1</string>
+								<string>ADBB810C107E209900C00CE1</string>
+								<string>ADBB805C107E1B7D00C00CE1</string>
+								<string>ADBB809F107E1D2300C00CE1</string>
+								<string>ADBB805D107E1B7D00C00CE1</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>11</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {185, 619}}</string>
+							<string>{{0, 0}, {308, 619}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -287,11 +292,11 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {202, 637}}</string>
+						<string>{{0, 0}, {325, 637}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>185</real>
+							<real>308</real>
 						</array>
 						<key>RubberWindowFrame</key>
 						<string>0 100 1280 678 0 0 1280 778 </string>
@@ -299,7 +304,7 @@
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>202pt</string>
+					<string>325pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
@@ -312,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>ADBB7E3F107E001300C00CE1</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ForismacAppDelegate.h</string>
+								<string>ForismacAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -320,19 +325,21 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>ADBB7E40107E001300C00CE1</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ForismacAppDelegate.h</string>
+										<string>ForismacAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>10</integer>
 										<key>bookmark</key>
-										<string>ADBB7FC2107E16A500C00CE1</string>
+										<string>ADBB8220107E2A4F00C00CE1</string>
 										<key>history</key>
 										<array>
 											<string>ADBB7EBD107E0B2E00C00CE1</string>
 											<string>ADBB7F6D107E116E00C00CE1</string>
 											<string>ADBB7F6E107E116E00C00CE1</string>
 											<string>ADBB7F6F107E116E00C00CE1</string>
-											<string>ADBB7FBC107E155F00C00CE1</string>
-											<string>ADBB7F6C107E116E00C00CE1</string>
+											<string>ADBB80B0107E1E2E00C00CE1</string>
+											<string>ADBB818E107E259E00C00CE1</string>
+											<string>ADBB8208107E29A300C00CE1</string>
+											<string>ADBB821F107E2A3A00C00CE1</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -346,7 +353,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1073, 632}}</string>
+								<string>{{0, 0}, {950, 632}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 100 1280 678 0 0 1280 778 </string>
 							</dict>
@@ -371,7 +378,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1073, -27}}</string>
+										<string>{{10, 27}, {950, -27}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -425,7 +432,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1073, -27}}</string>
+										<string>{{10, 27}, {950, -27}}</string>
 										<key>RubberWindowFrame</key>
 										<string>0 100 1280 678 0 0 1280 778 </string>
 									</dict>
@@ -436,7 +443,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>1073pt</string>
+					<string>950pt</string>
 				</dict>
 			</array>
 			<key>Name</key>

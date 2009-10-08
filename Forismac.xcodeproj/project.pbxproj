@@ -14,8 +14,23 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		ADBB7F34107E0E7D00C00CE1 /* forismatic.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBB7F33107E0E7D00C00CE1 /* forismatic.png */; };
 		ADBB7F63107E10A900C00CE1 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADBB7F62107E10A900C00CE1 /* Settings.xib */; };
-		ADBB7FBF107E169900C00CE1 /* Growl-WithInstaller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBB7FBE107E169900C00CE1 /* Growl-WithInstaller.framework */; };
+		ADBB80E2107E1F8300C00CE1 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = ADBB7FC3107E172000C00CE1 /* Growl Registration Ticket.growlRegDict */; };
+		ADBB80F8107E205500C00CE1 /* Growl-WithInstaller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBB80F7107E205500C00CE1 /* Growl-WithInstaller.framework */; };
+		ADBB8103107E208400C00CE1 /* Growl-WithInstaller.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ADBB80F7107E205500C00CE1 /* Growl-WithInstaller.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ADBB8102107E206600C00CE1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ADBB8103107E208400C00CE1 /* Growl-WithInstaller.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -32,8 +47,8 @@
 		8D1107320486CEB800E47090 /* Forismac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forismac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBB7F33107E0E7D00C00CE1 /* forismatic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forismatic.png; sourceTree = "<group>"; };
 		ADBB7F62107E10A900C00CE1 /* Settings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Settings.xib; sourceTree = "<group>"; };
-		ADBB7FBE107E169900C00CE1 /* Growl-WithInstaller.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Growl-WithInstaller.framework"; path = "/Volumes/Growl 1.2 SDK/Frameworks/Growl-WithInstaller.framework"; sourceTree = "<absolute>"; };
 		ADBB7FC3107E172000C00CE1 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
+		ADBB80F7107E205500C00CE1 /* Growl-WithInstaller.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Growl-WithInstaller.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				ADBB7FBF107E169900C00CE1 /* Growl-WithInstaller.framework in Frameworks */,
+				ADBB80F8107E205500C00CE1 /* Growl-WithInstaller.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,9 +136,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ADBB80F7107E205500C00CE1 /* Growl-WithInstaller.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
-				ADBB7FBE107E169900C00CE1 /* Growl-WithInstaller.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,6 +150,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Forismac" */;
 			buildPhases = (
+				ADBB8102107E206600C00CE1 /* CopyFiles */,
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
@@ -171,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBB80E2107E1F8300C00CE1 /* Growl Registration Ticket.growlRegDict in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				ADBB7F34107E0E7D00C00CE1 /* forismatic.png in Resources */,
@@ -220,6 +237,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"/Volumes/Growl 1.2 SDK/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -241,6 +259,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"/Volumes/Growl 1.2 SDK/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -257,11 +276,12 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx10.5;
 			};
 			name = Debug;
 		};
@@ -273,7 +293,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx10.5;
 			};
 			name = Release;
 		};

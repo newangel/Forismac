@@ -8,15 +8,23 @@
 
 #import <Cocoa/Cocoa.h>
 #import <Growl/Growl.h>
-@interface ForismacAppDelegate : NSObject <NSApplicationDelegate> {
+#if (MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_5)
+	@interface ForismacAppDelegate : NSObject <GrowlApplicationBridgeDelegate>
+#else
+	@interface ForismacAppDelegate : NSObject <NSApplicationDelegate,GrowlApplicationBridgeDelegate>
+#endif 
+{
     NSPanel *settings;
 	NSMenu *menu;
 	NSStatusItem *statusItem;
+	NSData *icon;
 }
 
 @property (assign) IBOutlet NSPanel *settings;
 @property(assign) IBOutlet NSMenu *menu;
 @property(retain) NSStatusItem *statusItem;
+@property(retain) NSData *icon;
 -(IBAction)exitApp:(id)sender;
 -(IBAction)snowSettings:(id)sender;
+-(IBAction)updateQuotes:(id)sender;
 @end
