@@ -18,13 +18,21 @@
 	NSMenu *menu;
 	NSStatusItem *statusItem;
 	NSData *icon;
+	int update_time;
+	NSTimer *timer;
+	NSMutableData *responseData;
+	NSURL *baseURL;
+	NSMenuItem *toogleAutoUpdateItem;
 }
 
 @property (assign) IBOutlet NSPanel *settings;
 @property(assign) IBOutlet NSMenu *menu;
 @property(retain) NSStatusItem *statusItem;
 @property(retain) NSData *icon;
+@property(retain) NSTimer *timer;
+@property(retain) IBOutlet NSMenuItem *toogleAutoUpdateItem;
 -(IBAction)exitApp:(id)sender;
 -(IBAction)snowSettings:(id)sender;
 -(IBAction)updateQuotes:(id)sender;
+-(IBAction)toogleAutoupdate:(id)sender;
 @end
