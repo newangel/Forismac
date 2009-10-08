@@ -17,9 +17,9 @@
 }
 - (void) awakeFromNib {
 	[settings close];
-	NSUserDefaults *defs=[[NSUserDefaults alloc] init];
-	update_time=[[defs valueForKey:@"update_time"] intValue];
-	timer = [NSTimer scheduledTimerWithTimeInterval:update_time target:self selector:@selector(newQuote:) userInfo:nil repeats:YES];
+	//NSUserDefaults *defs=[[NSUserDefaults alloc] init];
+	//update_time=[[defs valueForKey:@"update_time"] intValue];
+	//timer = [NSTimer scheduledTimerWithTimeInterval:update_time target:self selector:@selector(newQuote:) userInfo:nil repeats:YES];
 	statusItem = [[[NSStatusBar systemStatusBar] 
 				   statusItemWithLength:NSVariableStatusItemLength]
 				  retain];
@@ -57,7 +57,7 @@
 	exit(0);
 }
 -(IBAction)snowSettings:(id)sender {
-	
+	[NSBundle loadNibNamed:@"Settings.xib" owner:self];
 }
 -(void)showQuote:(NSString*)quote Author:(NSString*)author {
 	[GrowlApplicationBridge

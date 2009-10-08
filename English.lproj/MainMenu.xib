@@ -11,8 +11,8 @@
 			<string key="NS.object.0">732</string>
 		</object>
 		<array class="NSMutableArray" key="IBDocument.EditedObjectIDs">
-			<integer value="582"/>
 			<integer value="569"/>
+			<integer value="582"/>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -38,9 +38,6 @@
 				<bool key="NSAppliesImmediately">YES</bool>
 			</object>
 			<object class="NSUserDefaultsController" id="696460593">
-				<array class="NSMutableArray" key="NSDeclaredKeys">
-					<string>update_time</string>
-				</array>
 				<bool key="NSSharedInstance">YES</bool>
 			</object>
 			<object class="NSMenu" id="632769908">
@@ -67,6 +64,7 @@
 					</object>
 					<object class="NSMenuItem" id="584376014">
 						<reference key="NSMenu" ref="632769908"/>
+						<bool key="NSIsDisabled">YES</bool>
 						<string key="NSTitle">Стоп автоапдейт</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
@@ -92,6 +90,7 @@
 					</object>
 					<object class="NSMenuItem" id="540041010">
 						<reference key="NSMenu" ref="632769908"/>
+						<bool key="NSIsDisabled">YES</bool>
 						<string key="NSTitle">Настройки</string>
 						<string key="NSKeyEquiv">,</string>
 						<int key="NSKeyEquivModMask">1048576</int>

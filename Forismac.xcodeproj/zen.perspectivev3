@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>ActivePerspectiveName</key>
-	<string>Project</string>
+	<string>Debug</string>
 	<key>AllowedModules</key>
 	<array>
 		<dict>
@@ -296,8 +296,6 @@
 							<string>MainColumn</string>
 							<real>308</real>
 						</array>
-						<key>RubberWindowFrame</key>
-						<string>0 100 1280 678 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -308,8 +306,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -327,7 +323,7 @@
 										<key>_historyCapacity</key>
 										<integer>10</integer>
 										<key>bookmark</key>
-										<string>ADBB847F107E428100C00CE1</string>
+										<string>ADBB8525107E4AA700C00CE1</string>
 										<key>history</key>
 										<array>
 											<string>ADBB7EBD107E0B2E00C00CE1</string>
@@ -336,8 +332,8 @@
 											<string>ADBB7F6F107E116E00C00CE1</string>
 											<string>ADBB818E107E259E00C00CE1</string>
 											<string>ADBB8399107E39FE00C00CE1</string>
-											<string>ADBB843D107E406B00C00CE1</string>
-											<string>ADBB847E107E427C00C00CE1</string>
+											<string>ADBB84F7107E499F00C00CE1</string>
+											<string>ADBB8519107E4A2A00C00CE1</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -352,8 +348,6 @@
 							<dict>
 								<key>Frame</key>
 								<string>{{0, 0}, {950, 632}}</string>
-								<key>RubberWindowFrame</key>
-								<string>0 100 1280 678 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -377,8 +371,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {950, -27}}</string>
-										<key>RubberWindowFrame</key>
-										<string>0 100 1280 678 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -432,7 +424,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{0, 0}, {568, 405}}</string>
+										<string>{{10, 27}, {950, -27}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -505,6 +497,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
@@ -516,6 +510,8 @@
 					<dict>
 						<key>Frame</key>
 						<string>{{0, 0}, {1280, 135}}</string>
+						<key>RubberWindowFrame</key>
+						<string>0 100 1280 678 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
@@ -590,7 +586,11 @@
 							</array>
 							<key>Frame</key>
 							<string>{{624, 0}, {656, 241}}</string>
+							<key>RubberWindowFrame</key>
+							<string>0 100 1280 678 0 0 1280 778 </string>
 						</dict>
+						<key>RubberWindowFrame</key>
+						<string>0 100 1280 678 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
@@ -654,6 +654,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>ADBB8526107E4AA700C00CE1</string>
 		<string>ADBB837B107E38CD00C00CE1</string>
 		<string>ADBB837C107E38CD00C00CE1</string>
 		<string>/Users/zen/Projects/MacOsX/Forismac/Forismac.xcodeproj</string>
