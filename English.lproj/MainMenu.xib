@@ -276,14 +276,6 @@
 					<int key="connectionID">573</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">snowSettings:</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="540041010"/>
-					</object>
-					<int key="connectionID">593</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">settings</string>
 						<reference key="source" ref="976324537"/>
@@ -354,14 +346,6 @@
 						<reference key="destination" ref="732474605"/>
 					</object>
 					<int key="connectionID">609</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">toogleAutoupdate:</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="584376014"/>
-					</object>
-					<int key="connectionID">612</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
