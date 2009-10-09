@@ -137,7 +137,7 @@
 	NSXMLDocument *document =[[NSXMLDocument alloc] initWithXMLString:string options:NSXMLDocumentTidyXML error:&error];
 	
 	NSXMLElement *rootNode = [document rootElement];
-	NSString *xpathQueryStringText =@"//forismatic";
+	NSString *xpathQueryStringText =@"//forismatic/quote/quoteText";
 	NSArray *nodesText = [rootNode nodesForXPath:xpathQueryStringText error:&error];
 	
 	NSString *xpathQueryStringAuthor =@"//forismatic/quote/quoteAuthor";
