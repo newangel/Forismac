@@ -14,7 +14,8 @@
 			icon,
 			timer,
 			toogleAutoUpdateItem,
-			settingsController;
+			settingsController,
+			updateInterval;
 - (void) awakeFromNib {
 	statusItem = [[[NSStatusBar systemStatusBar] 
 				   statusItemWithLength:NSVariableStatusItemLength]
@@ -26,28 +27,40 @@
 	[statusItem setToolTip:@"Forismac"];
 	[statusItem setTarget:self];
 	[statusItem setMenu:menu];
-	
-	responseData = [[NSMutableData data] retain];
+	updateInterval = [[NSUserDefaults standardUserDefaults] valueForKey:@"updateInterval"];
+	if(!updateInterval) {
+		updateInterval=[NSNumber numberWithInt:1];
+		[[NSUserDefaults standardUserDefaults] setObject:updateInterval forKey:@"updateInterval"];
+	}
+	responseData=[[NSMutableData alloc] init];
 	baseURL = [[NSURL URLWithString:@"http://www.forismatic.com/api/1.0/"] retain];
+	timer = [NSTimer scheduledTimerWithTimeInterval:[updateInterval intValue] target:self selector:@selector(newQuote:) userInfo:nil repeats:YES];
 	
 	NSURL *url=[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"icon" ofType:@"png"]];
 	icon=[[NSData alloc] initWithContentsOfURL:url];
-	
 	[GrowlApplicationBridge setGrowlDelegate:self];
+	[self addObserver:self forKeyPath:@"self.updateInterval" options:0 context:nil];
+	
 }
 -(void)newQuote:(id)sender {
 	[self loadQuote];
 }
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+	if ([keyPath isEqualToString:@"self.updateInterval"]) {
+		[timer invalidate];
+		timer = nil;
+		timer = [NSTimer scheduledTimerWithTimeInterval:[updateInterval intValue] target:self selector:@selector(newQuote:) userInfo:nil repeats:YES];
+		updateInterval=[NSNumber numberWithInt:1];[[NSUserDefaults standardUserDefaults] setObject:updateInterval forKey:@"updateInterval"];
+	}
+}
 -(IBAction)toogleAutoupdate:(id)sender {
 	if(timer) {
 		[timer invalidate];
+		timer = nil;
 		[toogleAutoUpdateItem setTitle:@"Старт автоапдейт"];
-		[toogleAutoUpdateItem setState:2];
 	} else {
-		[timer release];
-		timer = [NSTimer scheduledTimerWithTimeInterval:update_time target:self selector:@selector(newQuote:) userInfo:nil repeats:YES];
+		timer = [NSTimer scheduledTimerWithTimeInterval:[updateInterval intValue] target:self selector:@selector(newQuote:) userInfo:nil repeats:YES];
 		[toogleAutoUpdateItem setTitle:@"Стоп автоапдейт"];
-		[toogleAutoUpdateItem setState:1];
 	}
 }
 -(IBAction)exitApp:(id)sender {
@@ -56,6 +69,8 @@
 -(IBAction)snowSettings:(id)sender {
     if (!settingsController) {
 		settingsController = [[SettingsController alloc] init];
+		[settingsController setUpdateInterval:updateInterval];
+		[self bind:@"updateInterval" toObject:settingsController withKeyPath:@"updateInterval" options:0];
     }
     [settingsController showWindow:self];
 }
@@ -128,12 +143,10 @@
 {
     [responseData appendData:data];
 }
-
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     [[NSAlert alertWithError:error] runModal];
 }
-
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
 	NSError *error;
@@ -156,7 +169,6 @@
 	}
 }
 -(void)dealloc {
-	[icon release];
 	[super dealloc];
 }
 @end

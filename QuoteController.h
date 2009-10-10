@@ -16,4 +16,5 @@
 @property(retain) NSString *quote;
 @property(retain) NSString *author;
 -(IBAction)sendMail:(id)sender;
+-(IBAction)copyQuote:(id)sender;
 @end

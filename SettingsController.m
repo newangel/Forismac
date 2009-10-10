@@ -10,6 +10,7 @@
 
 
 @implementation SettingsController
+@synthesize updateInterval;
 - (id)init {
 	if (self=[super initWithWindowNibName:@"Settings"]) {
 		

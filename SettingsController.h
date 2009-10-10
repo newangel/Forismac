@@ -10,7 +10,7 @@
 
 
 @interface SettingsController : NSWindowController {
-
+	NSNumber *updateInterval;
 }
-
+@property(retain) NSNumber *updateInterval;
 @end

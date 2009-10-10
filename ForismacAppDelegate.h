@@ -21,7 +21,7 @@
 	NSMenu *menu;
 	NSStatusItem *statusItem;
 	NSData *icon;
-	int update_time;
+	NSNumber *updateInterval;
 	NSTimer *timer;
 	NSMutableData *responseData;
 	NSURL *baseURL;
@@ -32,6 +32,7 @@
 @property(retain) NSStatusItem *statusItem;
 @property(retain) NSData *icon;
 @property(retain) NSTimer *timer;
+@property(retain) NSNumber *updateInterval;
 @property(retain) IBOutlet NSMenuItem *toogleAutoUpdateItem;
 @property(retain) SettingsController *settingsController;
 -(IBAction)exitApp:(id)sender;

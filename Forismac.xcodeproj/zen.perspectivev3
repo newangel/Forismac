@@ -276,8 +276,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>1</integer>
+									<integer>19</integer>
+									<integer>11</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -329,19 +329,19 @@
 										<key>_historyCapacity</key>
 										<integer>10</integer>
 										<key>bookmark</key>
-										<string>AD7406E61080A0EC00248233</string>
+										<string>AD7408511080BA6300248233</string>
 										<key>history</key>
 										<array>
 											<string>AD740572108081B400248233</string>
 											<string>AD74057D108082D200248233</string>
 											<string>AD7405A5108087BA00248233</string>
-											<string>AD7405D210808C5700248233</string>
-											<string>AD7405FD10808ECD00248233</string>
-											<string>AD74067F108095A200248233</string>
 											<string>AD740571108081B400248233</string>
-											<string>AD7406CC1080A01E00248233</string>
-											<string>AD7406D91080A09000248233</string>
-											<string>AD7406E51080A0D100248233</string>
+											<string>AD7406EE1080A77700248233</string>
+											<string>AD74071C1080AAFD00248233</string>
+											<string>AD74071D1080AAFD00248233</string>
+											<string>AD74071E1080AAFD00248233</string>
+											<string>AD74071F1080AAFD00248233</string>
+											<string>AD7408501080BA6000248233</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -658,9 +658,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>AD74084D1080B9C200248233</string>
 		<string>AD74052A10807E3800248233</string>
 		<string>AD74052B10807E3800248233</string>
-		<string>/Users/zen/Projects/MacOsX/Forismac/Forismac.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 100 1280 678 0 0 1280 778 </string>
