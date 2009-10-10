@@ -8,13 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 #import <Growl-WithInstaller/Growl.h>
+@class SettingsController;
 #if (MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_5)
 	@interface ForismacAppDelegate : NSObject <GrowlApplicationBridgeDelegate>
 #else
 	@interface ForismacAppDelegate : NSObject <NSApplicationDelegate,GrowlApplicationBridgeDelegate>
 #endif 
 {
-    NSPanel *settings;
 	NSMenu *menu;
 	NSStatusItem *statusItem;
 	NSData *icon;
@@ -23,14 +23,14 @@
 	NSMutableData *responseData;
 	NSURL *baseURL;
 	NSMenuItem *toogleAutoUpdateItem;
+	SettingsController *settingsController;
 }
-
-@property (assign) IBOutlet NSPanel *settings;
 @property(assign) IBOutlet NSMenu *menu;
 @property(retain) NSStatusItem *statusItem;
 @property(retain) NSData *icon;
 @property(retain) NSTimer *timer;
 @property(retain) IBOutlet NSMenuItem *toogleAutoUpdateItem;
+@property(retain) SettingsController *settingsController;
 -(IBAction)exitApp:(id)sender;
 -(IBAction)snowSettings:(id)sender;
 -(IBAction)updateQuotes:(id)sender;

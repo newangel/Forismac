@@ -12,7 +12,11 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		AD65D159107E4B9A006333A1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD65D158107E4B9A006333A1 /* icon.png */; };
+		AD74051110807D5900248233 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD74051010807D5900248233 /* SettingsController.m */; };
+		AD74052D10807E3F00248233 /* Forismac-24.png in Resources */ = {isa = PBXBuildFile; fileRef = AD74052C10807E3F00248233 /* Forismac-24.png */; };
+		AD74054B10807F7200248233 /* Forismac-24i.png in Resources */ = {isa = PBXBuildFile; fileRef = AD74054A10807F7200248233 /* Forismac-24i.png */; };
+		AD740562108080D300248233 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD740561108080D300248233 /* icon.png */; };
+		AD7405761080824E00248233 /* forismac.icns in Resources */ = {isa = PBXBuildFile; fileRef = AD7405751080824E00248233 /* forismac.icns */; };
 		ADBB7F34107E0E7D00C00CE1 /* forismatic.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBB7F33107E0E7D00C00CE1 /* forismatic.png */; };
 		ADBB7F63107E10A900C00CE1 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADBB7F62107E10A900C00CE1 /* Settings.xib */; };
 		ADBB80E2107E1F8300C00CE1 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = ADBB7FC3107E172000C00CE1 /* Growl Registration Ticket.growlRegDict */; };
@@ -46,7 +50,12 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Forismac-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Forismac-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Forismac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forismac.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD65D158107E4B9A006333A1 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		AD74050F10807D5900248233 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
+		AD74051010807D5900248233 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
+		AD74052C10807E3F00248233 /* Forismac-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forismac-24.png"; sourceTree = "<group>"; };
+		AD74054A10807F7200248233 /* Forismac-24i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forismac-24i.png"; sourceTree = "<group>"; };
+		AD740561108080D300248233 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		AD7405751080824E00248233 /* forismac.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = forismac.icns; sourceTree = "<group>"; };
 		ADBB7F33107E0E7D00C00CE1 /* forismatic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forismatic.png; sourceTree = "<group>"; };
 		ADBB7F62107E10A900C00CE1 /* Settings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Settings.xib; sourceTree = "<group>"; };
 		ADBB7FC3107E172000C00CE1 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
@@ -71,6 +80,8 @@
 			children = (
 				256AC3D80F4B6AC300CF3369 /* ForismacAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */,
+				AD74050F10807D5900248233 /* SettingsController.h */,
+				AD74051010807D5900248233 /* SettingsController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -125,7 +136,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AD65D158107E4B9A006333A1 /* icon.png */,
+				AD7405751080824E00248233 /* forismac.icns */,
+				AD740561108080D300248233 /* icon.png */,
+				AD74054A10807F7200248233 /* Forismac-24i.png */,
+				AD74052C10807E3F00248233 /* Forismac-24.png */,
 				ADBB7F33107E0E7D00C00CE1 /* forismatic.png */,
 				8D1107310486CEB800E47090 /* Forismac-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -195,7 +209,10 @@
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				ADBB7F34107E0E7D00C00CE1 /* forismatic.png in Resources */,
 				ADBB7F63107E10A900C00CE1 /* Settings.xib in Resources */,
-				AD65D159107E4B9A006333A1 /* icon.png in Resources */,
+				AD74052D10807E3F00248233 /* Forismac-24.png in Resources */,
+				AD74054B10807F7200248233 /* Forismac-24i.png in Resources */,
+				AD740562108080D300248233 /* icon.png in Resources */,
+				AD7405761080824E00248233 /* forismac.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +225,7 @@
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* ForismacAppDelegate.m in Sources */,
+				AD74051110807D5900248233 /* SettingsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

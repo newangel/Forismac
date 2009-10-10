@@ -2,24 +2,24 @@
 {
 	089C165DFE840E0CC02AAC07 /* English */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {889, 600}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1006, 600}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 45}";
 		};
 	};
 	256AC3D80F4B6AC300CF3369 /* ForismacAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1012, 779}}";
-			sepNavSelRange = "{201, 0}";
-			sepNavVisRange = "{140, 644}";
+			sepNavIntBoundsRect = "{{0, 0}, {1012, 741}}";
+			sepNavSelRange = "{695, 0}";
+			sepNavVisRange = "{139, 975}";
 			sepNavWindowFrame = "{{0, 50}, {1280, 728}}";
 		};
 	};
 	256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1412, 2968}}";
-			sepNavSelRange = "{1352, 0}";
-			sepNavVisRange = "{4712, 1178}";
+			sepNavIntBoundsRect = "{{0, 0}, {1372, 2949}}";
+			sepNavSelRange = "{1189, 0}";
+			sepNavVisRange = "{289, 1269}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -30,8 +30,8 @@
 			8D1107260486CEB800E47090 /* Forismac */,
 		);
 		breakpoints = (
-			ADBB83B2107E3AE500C00CE1 /* ForismacAppDelegate.m:139 */,
-			ADBB8469107E41FB00C00CE1 /* ForismacAppDelegate.m:60 */,
+			ADBB83B2107E3AE500C00CE1 /* ForismacAppDelegate.m:132 */,
+			ADBB8469107E41FB00C00CE1 /* ForismacAppDelegate.m:54 */,
 		);
 		codeSenseManager = ADBB7E4F107E001300C00CE1 /* Code sense */;
 		executables = (
@@ -106,27 +106,56 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 276765649;
-			PBXWorkspaceStateSaveDate = 276765649;
+			PBXPerProjectTemplateStateSaveDate = 276856100;
+			PBXWorkspaceStateSaveDate = 276856100;
 		};
 		perUserProjectItems = {
-			AD4A77BE107F1BDC0060FD36 /* PlistBookmark */ = AD4A77BE107F1BDC0060FD36 /* PlistBookmark */;
-			AD4A77C7107F1C520060FD36 /* PlistBookmark */ = AD4A77C7107F1C520060FD36 /* PlistBookmark */;
-			AD4A77C8107F1C5F0060FD36 /* PlistBookmark */ = AD4A77C8107F1C5F0060FD36 /* PlistBookmark */;
-			AD4A77C9107F1C5F0060FD36 /* PBXTextBookmark */ = AD4A77C9107F1C5F0060FD36 /* PBXTextBookmark */;
-			AD4A77CA107F1C5F0060FD36 /* PBXTextBookmark */ = AD4A77CA107F1C5F0060FD36 /* PBXTextBookmark */;
-			AD4A77CE107F1C600060FD36 /* PBXTextBookmark */ = AD4A77CE107F1C600060FD36 /* PBXTextBookmark */;
-			AD4A77CF107F1C850060FD36 /* PBXTextBookmark */ = AD4A77CF107F1C850060FD36 /* PBXTextBookmark */;
-			AD65D15E107E4B9E006333A1 = AD65D15E107E4B9E006333A1 /* PBXTextBookmark */;
+			AD4A77C8107F1C5F0060FD36 = AD4A77C8107F1C5F0060FD36 /* PlistBookmark */;
+			AD5AE9D5107F82D40048339A = AD5AE9D5107F82D40048339A /* PBXTextBookmark */;
+			AD5AE9D6107F82D40048339A = AD5AE9D6107F82D40048339A /* PBXTextBookmark */;
+			AD5AE9D7107F82D40048339A = AD5AE9D7107F82D40048339A /* PBXTextBookmark */;
 			AD65D175107E4BE0006333A1 = AD65D175107E4BE0006333A1 /* PBXBookmark */;
 			AD65D176107E4BE0006333A1 = AD65D176107E4BE0006333A1 /* PBXTextBookmark */;
-			AD65D177107E4BE0006333A1 = AD65D177107E4BE0006333A1 /* PlistBookmark */;
-			AD65D186107E4CCE006333A1 = AD65D186107E4CCE006333A1 /* PlistBookmark */;
+			AD74050A10807D4800248233 /* PBXTextBookmark */ = AD74050A10807D4800248233 /* PBXTextBookmark */;
+			AD74051610807DE200248233 /* PBXTextBookmark */ = AD74051610807DE200248233 /* PBXTextBookmark */;
+			AD74051710807DE200248233 /* PBXTextBookmark */ = AD74051710807DE200248233 /* PBXTextBookmark */;
+			AD74051810807DE200248233 /* PBXTextBookmark */ = AD74051810807DE200248233 /* PBXTextBookmark */;
+			AD74051910807DE200248233 /* PBXTextBookmark */ = AD74051910807DE200248233 /* PBXTextBookmark */;
+			AD74052210807E2100248233 /* PBXTextBookmark */ = AD74052210807E2100248233 /* PBXTextBookmark */;
+			AD74052310807E3300248233 /* PBXTextBookmark */ = AD74052310807E3300248233 /* PBXTextBookmark */;
+			AD74052410807E3800248233 /* PBXTextBookmark */ = AD74052410807E3800248233 /* PBXTextBookmark */;
+			AD74053410807E5100248233 /* PBXBookmark */ = AD74053410807E5100248233 /* PBXBookmark */;
+			AD74053510807E5100248233 /* PBXTextBookmark */ = AD74053510807E5100248233 /* PBXTextBookmark */;
+			AD74053610807E5100248233 /* PBXTextBookmark */ = AD74053610807E5100248233 /* PBXTextBookmark */;
+			AD74053710807E5200248233 /* PBXTextBookmark */ = AD74053710807E5200248233 /* PBXTextBookmark */;
+			AD74053910807E6000248233 /* PBXTextBookmark */ = AD74053910807E6000248233 /* PBXTextBookmark */;
+			AD74053A10807E6200248233 /* PBXTextBookmark */ = AD74053A10807E6200248233 /* PBXTextBookmark */;
+			AD74053D10807E7600248233 /* PBXTextBookmark */ = AD74053D10807E7600248233 /* PBXTextBookmark */;
+			AD74053E10807E8500248233 /* PBXTextBookmark */ = AD74053E10807E8500248233 /* PBXTextBookmark */;
+			AD74054810807F6400248233 /* PBXTextBookmark */ = AD74054810807F6400248233 /* PBXTextBookmark */;
+			AD74054910807F6700248233 /* PBXTextBookmark */ = AD74054910807F6700248233 /* PBXTextBookmark */;
+			AD74055010807F9800248233 /* PBXTextBookmark */ = AD74055010807F9800248233 /* PBXTextBookmark */;
+			AD74055110807FA700248233 /* PBXTextBookmark */ = AD74055110807FA700248233 /* PBXTextBookmark */;
+			AD7405571080803A00248233 /* PBXTextBookmark */ = AD7405571080803A00248233 /* PBXTextBookmark */;
+			AD7405581080803D00248233 /* PBXTextBookmark */ = AD7405581080803D00248233 /* PBXTextBookmark */;
+			AD74055E108080A800248233 /* PBXTextBookmark */ = AD74055E108080A800248233 /* PBXTextBookmark */;
+			AD74055F108080CB00248233 /* PBXTextBookmark */ = AD74055F108080CB00248233 /* PBXTextBookmark */;
+			AD740560108080CD00248233 /* PBXTextBookmark */ = AD740560108080CD00248233 /* PBXTextBookmark */;
+			AD740567108080FD00248233 /* PBXTextBookmark */ = AD740567108080FD00248233 /* PBXTextBookmark */;
+			AD740568108080FD00248233 /* PBXBookmark */ = AD740568108080FD00248233 /* PBXBookmark */;
+			AD740569108080FD00248233 /* PBXBookmark */ = AD740569108080FD00248233 /* PBXBookmark */;
+			AD740571108081B400248233 /* PBXBookmark */ = AD740571108081B400248233 /* PBXBookmark */;
+			AD740572108081B400248233 /* PBXTextBookmark */ = AD740572108081B400248233 /* PBXTextBookmark */;
+			AD740573108081B400248233 /* PlistBookmark */ = AD740573108081B400248233 /* PlistBookmark */;
+			AD740574108081B400248233 /* PlistBookmark */ = AD740574108081B400248233 /* PlistBookmark */;
+			AD74057D108082D200248233 /* PlistBookmark */ = AD74057D108082D200248233 /* PlistBookmark */;
+			AD74057E108082D200248233 /* PBXTextBookmark */ = AD74057E108082D200248233 /* PBXTextBookmark */;
+			AD74057F108082D200248233 /* PBXTextBookmark */ = AD74057F108082D200248233 /* PBXTextBookmark */;
+			AD740580108082D500248233 /* PBXTextBookmark */ = AD740580108082D500248233 /* PBXTextBookmark */;
 			ADBB7EBD107E0B2E00C00CE1 = ADBB7EBD107E0B2E00C00CE1 /* PBXTextBookmark */;
 			ADBB7F6F107E116E00C00CE1 = ADBB7F6F107E116E00C00CE1 /* PBXBookmark */;
 			ADBB818E107E259E00C00CE1 = ADBB818E107E259E00C00CE1 /* PBXTextBookmark */;
 			ADBB8399107E39FE00C00CE1 = ADBB8399107E39FE00C00CE1 /* PBXTextBookmark */;
-			ADBB84F7107E499F00C00CE1 = ADBB84F7107E499F00C00CE1 /* PBXTextBookmark */;
 		};
 		sourceControlManager = ADBB7E4E107E001300C00CE1 /* Source Control */;
 		userBuildSettings = {
@@ -145,30 +174,6 @@
 			ADBB7E38107E000300C00CE1 /* Forismac */,
 		);
 	};
-	AD4A77BE107F1BDC0060FD36 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* Forismac-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			CFBundlePackageType,
-		);
-		name = "/Users/zen/Projects/MacOsX/Forismac/Forismac-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	AD4A77C7107F1C520060FD36 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* Forismac-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			CFBundlePackageType,
-		);
-		name = "/Users/zen/Projects/MacOsX/Forismac/Forismac-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
 	AD4A77C8107F1C5F0060FD36 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 8D1107310486CEB800E47090 /* Forismac-Info.plist */;
@@ -179,57 +184,44 @@
 		);
 		name = "/Users/zen/Projects/MacOsX/Forismac/Forismac-Info.plist";
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
-	AD4A77C9107F1C5F0060FD36 /* PBXTextBookmark */ = {
+	AD5AE9D5107F82D40048339A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* ForismacAppDelegate.h */;
+		name = "ForismacAppDelegate.h: 16";
+		rLen = 0;
+		rLoc = 478;
+		rType = 0;
+		vrLen = 920;
+		vrLoc = 139;
+	};
+	AD5AE9D6107F82D40048339A /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
-		name = "ForismacAppDelegate.m: 40";
+		name = "ForismacAppDelegate.m: 16";
 		rLen = 0;
-		rLoc = 1352;
+		rLoc = 312;
 		rType = 0;
-		vrLen = 847;
-		vrLoc = 1403;
+		vrLen = 1972;
+		vrLoc = 858;
 	};
-	AD4A77CA107F1C5F0060FD36 /* PBXTextBookmark */ = {
+	AD5AE9D7107F82D40048339A /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
-		name = "ForismacAppDelegate.m: 40";
+		name = "ForismacAppDelegate.m: 152";
 		rLen = 0;
-		rLoc = 1352;
+		rLoc = 4347;
 		rType = 0;
-		vrLen = 1021;
-		vrLoc = 4913;
+		vrLen = 1328;
+		vrLoc = 6450;
 	};
-	AD4A77CE107F1C600060FD36 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
-		name = "ForismacAppDelegate.m: 40";
-		rLen = 0;
-		rLoc = 1352;
-		rType = 0;
-		vrLen = 1021;
-		vrLoc = 4913;
-	};
-	AD4A77CF107F1C850060FD36 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
-		name = "ForismacAppDelegate.m: 40";
-		rLen = 0;
-		rLoc = 1352;
-		rType = 0;
-		vrLen = 1178;
-		vrLoc = 4712;
-	};
-	AD65D15E107E4B9E006333A1 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
-		name = "ForismacAppDelegate.m: 40";
-		rLen = 0;
-		rLoc = 1352;
-		rType = 0;
-		vrLen = 944;
-		vrLoc = 1403;
+	AD65D158107E4B9A006333A1 /* icon.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		name = icon.png;
+		path = /Users/zen/Projects/MacOsX/Forismac/icon.png;
+		sourceTree = "<absolute>";
 	};
 	AD65D175107E4BE0006333A1 /* PBXBookmark */ = {
 		isa = PBXBookmark;
@@ -245,18 +237,290 @@
 		vrLen = 45;
 		vrLoc = 0;
 	};
-	AD65D177107E4BE0006333A1 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* Forismac-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/zen/Projects/MacOsX/Forismac/Forismac-Info.plist";
+	AD74050A10807D4800248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 143";
 		rLen = 0;
-		rLoc = 9223372036854775808;
+		rLoc = 4033;
+		rType = 0;
+		vrLen = 2168;
+		vrLoc = 5368;
 	};
-	AD65D186107E4CCE006333A1 /* PlistBookmark */ = {
+	AD74050F10807D5900248233 /* SettingsController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1006, 600}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 227}";
+		};
+	};
+	AD74051610807DE200248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AD74050F10807D5900248233 /* SettingsController.h */;
+		name = "SettingsController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 227;
+		vrLoc = 0;
+	};
+	AD74051710807DE200248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* ForismacAppDelegate.h */;
+		name = "ForismacAppDelegate.h: 27";
+		rLen = 0;
+		rLoc = 695;
+		rType = 0;
+		vrLen = 974;
+		vrLoc = 140;
+	};
+	AD74051810807DE200248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 12";
+		rLen = 0;
+		rLoc = 287;
+		rType = 0;
+		vrLen = 1259;
+		vrLoc = 0;
+	};
+	AD74051910807DE200248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 13";
+		rLen = 0;
+		rLoc = 312;
+		rType = 0;
+		vrLen = 1240;
+		vrLoc = 0;
+	};
+	AD74052210807E2100248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 35";
+		rLen = 0;
+		rLoc = 1341;
+		rType = 0;
+		vrLen = 1578;
+		vrLoc = 1850;
+	};
+	AD74052310807E3300248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 35";
+		rLen = 0;
+		rLoc = 1341;
+		rType = 0;
+		vrLen = 194;
+		vrLoc = 1850;
+	};
+	AD74052410807E3800248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 63";
+		rLen = 0;
+		rLoc = 2147;
+		rType = 0;
+		vrLen = 919;
+		vrLoc = 1460;
+	};
+	AD74053410807E5100248233 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = AD74052C10807E3F00248233 /* Forismac-24.png */;
+	};
+	AD74053510807E5100248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 63";
+		rLen = 0;
+		rLoc = 2147;
+		rType = 0;
+		vrLen = 919;
+		vrLoc = 1460;
+	};
+	AD74053610807E5100248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 21";
+		rLen = 0;
+		rLoc = 760;
+		rType = 0;
+		vrLen = 1252;
+		vrLoc = 172;
+	};
+	AD74053710807E5200248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 21";
+		rLen = 0;
+		rLoc = 760;
+		rType = 0;
+		vrLen = 1289;
+		vrLoc = 172;
+	};
+	AD74053910807E6000248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 21";
+		rLen = 0;
+		rLoc = 760;
+		rType = 0;
+		vrLen = 183;
+		vrLoc = 1241;
+	};
+	AD74053A10807E6200248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 21";
+		rLen = 0;
+		rLoc = 760;
+		rType = 0;
+		vrLen = 1299;
+		vrLoc = 172;
+	};
+	AD74053D10807E7600248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 13";
+		rLen = 0;
+		rLoc = 312;
+		rType = 0;
+		vrLen = 1252;
+		vrLoc = 172;
+	};
+	AD74053E10807E8500248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 13";
+		rLen = 0;
+		rLoc = 312;
+		rType = 0;
+		vrLen = 1289;
+		vrLoc = 172;
+	};
+	AD74054810807F6400248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 13";
+		rLen = 0;
+		rLoc = 312;
+		rType = 0;
+		vrLen = 183;
+		vrLoc = 1241;
+	};
+	AD74054910807F6700248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 13";
+		rLen = 0;
+		rLoc = 312;
+		rType = 0;
+		vrLen = 1299;
+		vrLoc = 172;
+	};
+	AD74055010807F9800248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 22";
+		rLen = 0;
+		rLoc = 851;
+		rType = 0;
+		vrLen = 1326;
+		vrLoc = 172;
+	};
+	AD74055110807FA700248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 22";
+		rLen = 0;
+		rLoc = 851;
+		rType = 0;
+		vrLen = 1326;
+		vrLoc = 172;
+	};
+	AD7405571080803A00248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 22";
+		rLen = 0;
+		rLoc = 851;
+		rType = 0;
+		vrLen = 299;
+		vrLoc = 1109;
+	};
+	AD7405581080803D00248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 22";
+		rLen = 0;
+		rLoc = 851;
+		rType = 0;
+		vrLen = 1326;
+		vrLoc = 172;
+	};
+	AD74055E108080A800248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 22";
+		rLen = 0;
+		rLoc = 851;
+		rType = 0;
+		vrLen = 1326;
+		vrLoc = 172;
+	};
+	AD74055F108080CB00248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 22";
+		rLen = 0;
+		rLoc = 851;
+		rType = 0;
+		vrLen = 299;
+		vrLoc = 1109;
+	};
+	AD740560108080CD00248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 22";
+		rLen = 0;
+		rLoc = 851;
+		rType = 0;
+		vrLen = 1363;
+		vrLoc = 172;
+	};
+	AD740567108080FD00248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 22";
+		rLen = 0;
+		rLoc = 851;
+		rType = 0;
+		vrLen = 1363;
+		vrLoc = 172;
+	};
+	AD740568108080FD00248233 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = AD740561108080D300248233 /* icon.png */;
+	};
+	AD740569108080FD00248233 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = AD740561108080D300248233 /* icon.png */;
+	};
+	AD740571108081B400248233 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = AD740561108080D300248233 /* icon.png */;
+	};
+	AD740572108081B400248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 089C165DFE840E0CC02AAC07 /* English */;
+		name = "InfoPlist.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 45;
+		vrLoc = 0;
+	};
+	AD740573108081B400248233 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 8D1107310486CEB800E47090 /* Forismac-Info.plist */;
 		fallbackIsa = PBXBookmark;
@@ -266,7 +530,61 @@
 		);
 		name = "/Users/zen/Projects/MacOsX/Forismac/Forismac-Info.plist";
 		rLen = 0;
-		rLoc = 9223372036854775808;
+		rLoc = 0;
+	};
+	AD740574108081B400248233 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Forismac-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIconFile,
+		);
+		name = "/Users/zen/Projects/MacOsX/Forismac/Forismac-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	AD74057D108082D200248233 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Forismac-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
+		);
+		name = "/Users/zen/Projects/MacOsX/Forismac/Forismac-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	AD74057E108082D200248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 22";
+		rLen = 0;
+		rLoc = 851;
+		rType = 0;
+		vrLen = 1362;
+		vrLoc = 173;
+	};
+	AD74057F108082D200248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 30";
+		rLen = 0;
+		rLoc = 1189;
+		rType = 0;
+		vrLen = 1250;
+		vrLoc = 289;
+	};
+	AD740580108082D500248233 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */;
+		name = "ForismacAppDelegate.m: 30";
+		rLen = 0;
+		rLoc = 1189;
+		rType = 0;
+		vrLen = 1269;
+		vrLoc = 289;
 	};
 	ADBB7E38107E000300C00CE1 /* Forismac */ = {
 		isa = PBXExecutable;
@@ -367,7 +685,7 @@
 		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSURLResponse.h;
 		sourceTree = "<absolute>";
 	};
-	ADBB83B2107E3AE500C00CE1 /* ForismacAppDelegate.m:139 */ = {
+	ADBB83B2107E3AE500C00CE1 /* ForismacAppDelegate.m:132 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -379,13 +697,13 @@
 		functionName = "-connectionDidFinishLoading:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 139;
+		lineNumber = 132;
 		location = Forismac;
 		modificationTime = 276709891.548405;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
-	ADBB8469107E41FB00C00CE1 /* ForismacAppDelegate.m:60 */ = {
+	ADBB8469107E41FB00C00CE1 /* ForismacAppDelegate.m:54 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -397,20 +715,10 @@
 		functionName = "-snowSettings:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 60;
+		lineNumber = 54;
 		location = Forismac;
 		modificationTime = 276709894.785306;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
-	};
-	ADBB84F7107E499F00C00CE1 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D80F4B6AC300CF3369 /* ForismacAppDelegate.h */;
-		name = "ForismacAppDelegate.h: 10";
-		rLen = 0;
-		rLoc = 201;
-		rType = 0;
-		vrLen = 644;
-		vrLoc = 140;
 	};
 }

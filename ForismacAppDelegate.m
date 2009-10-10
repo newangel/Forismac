@@ -9,14 +9,8 @@
 #import "ForismacAppDelegate.h"
 
 @implementation ForismacAppDelegate
-
-@synthesize settings,menu,statusItem,icon,timer;
-
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-
-}
+@synthesize menu,statusItem,icon,timer,toogleAutoUpdateItem,settingsController;
 - (void) awakeFromNib {
-	[settings close];
 	//NSUserDefaults *defs=[[NSUserDefaults alloc] init];
 	//update_time=[[defs valueForKey:@"update_time"] intValue];
 	//timer = [NSTimer scheduledTimerWithTimeInterval:update_time target:self selector:@selector(newQuote:) userInfo:nil repeats:YES];
@@ -24,16 +18,16 @@
 				   statusItemWithLength:NSVariableStatusItemLength]
 				  retain];
 	[statusItem setHighlightMode:YES];
-	[statusItem setImage:[NSImage imageNamed:@"forismatic.png"]];
+	[statusItem setImage:[NSImage imageNamed:@"Forismac-24.png"]];
+	[statusItem setAlternateImage:[NSImage imageNamed:@"Forismac-24i.png"]];
 	[statusItem setEnabled:YES];
 	[statusItem setToolTip:@"Forismac"];
-	[statusItem setAction:@selector(showMenu:)];
 	[statusItem setTarget:self];
 	[statusItem setMenu:menu];
 	responseData = [[NSMutableData data] retain];
 	baseURL = [[NSURL URLWithString:@"http://www.forismatic.com/api/1.0/"] retain];
 	
-	NSURL *url=[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"forismatic" ofType:@"png"]];
+	NSURL *url=[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"icon" ofType:@"png"]];
 	icon=[[NSData alloc] initWithContentsOfURL:url];
 	[GrowlApplicationBridge setGrowlDelegate:self];
 	
@@ -81,7 +75,7 @@
 	NSString *boundary = [NSString stringWithFormat:@"--%@--", [[NSProcessInfo processInfo] globallyUniqueString]];
 	[request setValue:[NSString stringWithFormat:@"multipart/form-data; boundary=%@", boundary] forHTTPHeaderField:@"Content-Type"];
 	NSData *boundaryData = [[[[@"--" stringByAppendingString:boundary] stringByAppendingString:@"\r\n"] dataUsingEncoding:encoding] retain];
-	
+	//Set method=getQuote post param
 	[requestBodyData appendData:boundaryData];
 	[requestBodyData appendData:[[NSString stringWithFormat:@"Content-Disposition: multipart/form-data; "] dataUsingEncoding:encoding]];
 	[requestBodyData appendData:[[NSString stringWithFormat:@"name=\"%@\"; ", @"method"] dataUsingEncoding:encoding]];
@@ -89,7 +83,7 @@
 	[requestBodyData appendData:[[NSString stringWithFormat:@"getQuote"] dataUsingEncoding:encoding]];
 	[requestBodyData appendData:[[NSString stringWithFormat:@"\r\n"] dataUsingEncoding:encoding]];
 	[requestBodyData appendData:boundaryData];
-	
+	//Set format=xml post param
 	[requestBodyData appendData:boundaryData];
 	[requestBodyData appendData:[[NSString stringWithFormat:@"Content-Disposition: multipart/form-data; "] dataUsingEncoding:encoding]];
 	[requestBodyData appendData:[[NSString stringWithFormat:@"name=\"%@\"; ", @"format"] dataUsingEncoding:encoding]];
@@ -97,7 +91,6 @@
 	[requestBodyData appendData:[[NSString stringWithFormat:@"xml"] dataUsingEncoding:encoding]];
 	[requestBodyData appendData:[[NSString stringWithFormat:@"\r\n"] dataUsingEncoding:encoding]];
 	[requestBodyData appendData:boundaryData];
-	
 	
 	[request setHTTPBody:requestBodyData];
 	
