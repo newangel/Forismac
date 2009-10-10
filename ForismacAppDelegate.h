@@ -8,12 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 #import <Growl-WithInstaller/Growl.h>
-@class SettingsController;
+#import "SettingsController.h"
+#import "QuoteController.h"
+
 #if (MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_5)
 	@interface ForismacAppDelegate : NSObject <GrowlApplicationBridgeDelegate>
 #else
 	@interface ForismacAppDelegate : NSObject <NSApplicationDelegate,GrowlApplicationBridgeDelegate>
 #endif 
+
 {
 	NSMenu *menu;
 	NSStatusItem *statusItem;
@@ -35,4 +38,5 @@
 -(IBAction)snowSettings:(id)sender;
 -(IBAction)updateQuotes:(id)sender;
 -(IBAction)toogleAutoupdate:(id)sender;
+-(void)loadQuote;
 @end

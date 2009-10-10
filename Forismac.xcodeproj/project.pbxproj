@@ -17,7 +17,8 @@
 		AD74054B10807F7200248233 /* Forismac-24i.png in Resources */ = {isa = PBXBuildFile; fileRef = AD74054A10807F7200248233 /* Forismac-24i.png */; };
 		AD740562108080D300248233 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD740561108080D300248233 /* icon.png */; };
 		AD7405761080824E00248233 /* forismac.icns in Resources */ = {isa = PBXBuildFile; fileRef = AD7405751080824E00248233 /* forismac.icns */; };
-		ADBB7F34107E0E7D00C00CE1 /* forismatic.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBB7F33107E0E7D00C00CE1 /* forismatic.png */; };
+		AD7405F210808E1700248233 /* QuoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7405F110808E1700248233 /* QuoteController.m */; };
+		AD7405F410808E3A00248233 /* Quote.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7405F310808E3A00248233 /* Quote.xib */; };
 		ADBB7F63107E10A900C00CE1 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADBB7F62107E10A900C00CE1 /* Settings.xib */; };
 		ADBB80E2107E1F8300C00CE1 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = ADBB7FC3107E172000C00CE1 /* Growl Registration Ticket.growlRegDict */; };
 		ADBB80F8107E205500C00CE1 /* Growl-WithInstaller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBB80F7107E205500C00CE1 /* Growl-WithInstaller.framework */; };
@@ -56,7 +57,9 @@
 		AD74054A10807F7200248233 /* Forismac-24i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forismac-24i.png"; sourceTree = "<group>"; };
 		AD740561108080D300248233 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		AD7405751080824E00248233 /* forismac.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = forismac.icns; sourceTree = "<group>"; };
-		ADBB7F33107E0E7D00C00CE1 /* forismatic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forismatic.png; sourceTree = "<group>"; };
+		AD7405F010808E1700248233 /* QuoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuoteController.h; sourceTree = "<group>"; };
+		AD7405F110808E1700248233 /* QuoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuoteController.m; sourceTree = "<group>"; };
+		AD7405F310808E3A00248233 /* Quote.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Quote.xib; sourceTree = "<group>"; };
 		ADBB7F62107E10A900C00CE1 /* Settings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Settings.xib; sourceTree = "<group>"; };
 		ADBB7FC3107E172000C00CE1 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
 		ADBB80F7107E205500C00CE1 /* Growl-WithInstaller.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Growl-WithInstaller.framework"; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 				256AC3D90F4B6AC300CF3369 /* ForismacAppDelegate.m */,
 				AD74050F10807D5900248233 /* SettingsController.h */,
 				AD74051010807D5900248233 /* SettingsController.m */,
+				AD7405F010808E1700248233 /* QuoteController.h */,
+				AD7405F110808E1700248233 /* QuoteController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -140,12 +145,12 @@
 				AD740561108080D300248233 /* icon.png */,
 				AD74054A10807F7200248233 /* Forismac-24i.png */,
 				AD74052C10807E3F00248233 /* Forismac-24.png */,
-				ADBB7F33107E0E7D00C00CE1 /* forismatic.png */,
 				8D1107310486CEB800E47090 /* Forismac-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 				ADBB7F62107E10A900C00CE1 /* Settings.xib */,
 				ADBB7FC3107E172000C00CE1 /* Growl Registration Ticket.growlRegDict */,
+				AD7405F310808E3A00248233 /* Quote.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -207,12 +212,12 @@
 				ADBB80E2107E1F8300C00CE1 /* Growl Registration Ticket.growlRegDict in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
-				ADBB7F34107E0E7D00C00CE1 /* forismatic.png in Resources */,
 				ADBB7F63107E10A900C00CE1 /* Settings.xib in Resources */,
 				AD74052D10807E3F00248233 /* Forismac-24.png in Resources */,
 				AD74054B10807F7200248233 /* Forismac-24i.png in Resources */,
 				AD740562108080D300248233 /* icon.png in Resources */,
 				AD7405761080824E00248233 /* forismac.icns in Resources */,
+				AD7405F410808E3A00248233 /* Quote.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +231,7 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* ForismacAppDelegate.m in Sources */,
 				AD74051110807D5900248233 /* SettingsController.m in Sources */,
+				AD7405F210808E1700248233 /* QuoteController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

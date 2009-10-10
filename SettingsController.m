@@ -10,5 +10,10 @@
 
 
 @implementation SettingsController
-
+- (id)init {
+	if (self=[super initWithWindowNibName:@"Settings"]) {
+		
+	}
+	return self;
+}
 @end

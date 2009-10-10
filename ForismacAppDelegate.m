@@ -9,11 +9,13 @@
 #import "ForismacAppDelegate.h"
 
 @implementation ForismacAppDelegate
-@synthesize menu,statusItem,icon,timer,toogleAutoUpdateItem,settingsController;
+@synthesize menu,
+			statusItem,
+			icon,
+			timer,
+			toogleAutoUpdateItem,
+			settingsController;
 - (void) awakeFromNib {
-	//NSUserDefaults *defs=[[NSUserDefaults alloc] init];
-	//update_time=[[defs valueForKey:@"update_time"] intValue];
-	//timer = [NSTimer scheduledTimerWithTimeInterval:update_time target:self selector:@selector(newQuote:) userInfo:nil repeats:YES];
 	statusItem = [[[NSStatusBar systemStatusBar] 
 				   statusItemWithLength:NSVariableStatusItemLength]
 				  retain];
@@ -24,13 +26,14 @@
 	[statusItem setToolTip:@"Forismac"];
 	[statusItem setTarget:self];
 	[statusItem setMenu:menu];
+	
 	responseData = [[NSMutableData data] retain];
 	baseURL = [[NSURL URLWithString:@"http://www.forismatic.com/api/1.0/"] retain];
 	
 	NSURL *url=[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"icon" ofType:@"png"]];
 	icon=[[NSData alloc] initWithContentsOfURL:url];
-	[GrowlApplicationBridge setGrowlDelegate:self];
 	
+	[GrowlApplicationBridge setGrowlDelegate:self];
 }
 -(void)newQuote:(id)sender {
 	[self loadQuote];
@@ -51,9 +54,13 @@
 	exit(0);
 }
 -(IBAction)snowSettings:(id)sender {
-	[NSBundle loadNibNamed:@"Settings.xib" owner:self];
+    if (!settingsController) {
+		settingsController = [[SettingsController alloc] init];
+    }
+    [settingsController showWindow:self];
 }
 -(void)showQuote:(NSString*)quote Author:(NSString*)author {
+	NSDictionary *context=[NSDictionary dictionaryWithObjectsAndKeys:quote,@"quote",author,@"author",nil];
 	[GrowlApplicationBridge
 	 notifyWithTitle:author
 	 description:quote
@@ -61,7 +68,7 @@
 	 iconData:icon
 	 priority:0
 	 isSticky:NO
-	 clickContext:nil];
+	 clickContext:context];
 }
 -(IBAction)updateQuotes:(id)sender {
 	[self loadQuote];
@@ -75,6 +82,7 @@
 	NSString *boundary = [NSString stringWithFormat:@"--%@--", [[NSProcessInfo processInfo] globallyUniqueString]];
 	[request setValue:[NSString stringWithFormat:@"multipart/form-data; boundary=%@", boundary] forHTTPHeaderField:@"Content-Type"];
 	NSData *boundaryData = [[[[@"--" stringByAppendingString:boundary] stringByAppendingString:@"\r\n"] dataUsingEncoding:encoding] retain];
+	
 	//Set method=getQuote post param
 	[requestBodyData appendData:boundaryData];
 	[requestBodyData appendData:[[NSString stringWithFormat:@"Content-Disposition: multipart/form-data; "] dataUsingEncoding:encoding]];
@@ -83,6 +91,7 @@
 	[requestBodyData appendData:[[NSString stringWithFormat:@"getQuote"] dataUsingEncoding:encoding]];
 	[requestBodyData appendData:[[NSString stringWithFormat:@"\r\n"] dataUsingEncoding:encoding]];
 	[requestBodyData appendData:boundaryData];
+	
 	//Set format=xml post param
 	[requestBodyData appendData:boundaryData];
 	[requestBodyData appendData:[[NSString stringWithFormat:@"Content-Disposition: multipart/form-data; "] dataUsingEncoding:encoding]];
@@ -97,6 +106,10 @@
     NSURLConnection *con=[[NSURLConnection alloc] initWithRequest:request delegate:self];
 }
 - (void)growlNotificationWasClicked:(id)clickContext {
+	QuoteController *quoteController=[[QuoteController alloc] init];
+	[quoteController setQuote:[clickContext valueForKey:@"quote"]];
+	[quoteController setAuthor:[clickContext valueForKey:@"author"]];
+    [quoteController showWindow:self];
 }
 - (NSURLRequest *)connection:(NSURLConnection *)connection
 			 willSendRequest:(NSURLRequest *)request

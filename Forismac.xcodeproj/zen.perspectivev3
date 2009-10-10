@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>ActivePerspectiveName</key>
-	<string>Debug</string>
+	<string>Project</string>
 	<key>AllowedModules</key>
 	<array>
 		<dict>
@@ -265,6 +265,7 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
@@ -297,6 +298,8 @@
 							<string>MainColumn</string>
 							<real>191</real>
 						</array>
+						<key>RubberWindowFrame</key>
+						<string>0 100 1280 678 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -307,6 +310,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -324,18 +329,19 @@
 										<key>_historyCapacity</key>
 										<integer>10</integer>
 										<key>bookmark</key>
-										<string>AD740580108082D500248233</string>
+										<string>AD7406E61080A0EC00248233</string>
 										<key>history</key>
 										<array>
-											<string>ADBB818E107E259E00C00CE1</string>
-											<string>ADBB8399107E39FE00C00CE1</string>
-											<string>AD74051610807DE200248233</string>
-											<string>AD74051710807DE200248233</string>
-											<string>AD74053410807E5100248233</string>
-											<string>AD740571108081B400248233</string>
 											<string>AD740572108081B400248233</string>
 											<string>AD74057D108082D200248233</string>
-											<string>AD74057E108082D200248233</string>
+											<string>AD7405A5108087BA00248233</string>
+											<string>AD7405D210808C5700248233</string>
+											<string>AD7405FD10808ECD00248233</string>
+											<string>AD74067F108095A200248233</string>
+											<string>AD740571108081B400248233</string>
+											<string>AD7406CC1080A01E00248233</string>
+											<string>AD7406D91080A09000248233</string>
+											<string>AD7406E51080A0D100248233</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -350,6 +356,8 @@
 							<dict>
 								<key>Frame</key>
 								<string>{{0, 0}, {1067, 632}}</string>
+								<key>RubberWindowFrame</key>
+								<string>0 100 1280 678 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -426,7 +434,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{0, 0}, {568, 405}}</string>
+										<string>{{10, 27}, {1067, -27}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 100 1280 678 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -499,8 +509,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
@@ -512,8 +520,6 @@
 					<dict>
 						<key>Frame</key>
 						<string>{{0, 0}, {1280, 283}}</string>
-						<key>RubberWindowFrame</key>
-						<string>0 100 1280 678 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
@@ -588,11 +594,7 @@
 							</array>
 							<key>Frame</key>
 							<string>{{625, 0}, {655, 170}}</string>
-							<key>RubberWindowFrame</key>
-							<string>0 100 1280 678 0 0 1280 778 </string>
 						</dict>
-						<key>RubberWindowFrame</key>
-						<string>0 100 1280 678 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
@@ -656,7 +658,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>AD740581108082D500248233</string>
 		<string>AD74052A10807E3800248233</string>
 		<string>AD74052B10807E3800248233</string>
 		<string>/Users/zen/Projects/MacOsX/Forismac/Forismac.xcodeproj</string>
