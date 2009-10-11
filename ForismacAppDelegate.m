@@ -15,7 +15,9 @@
 			timer,
 			toogleAutoUpdateItem,
 			settingsController,
-			updateInterval;
+			updateInterval,
+			historyMenu,
+			history;
 - (void) awakeFromNib {
 	statusItem = [[[NSStatusBar systemStatusBar] 
 				   statusItemWithLength:NSVariableStatusItemLength]
@@ -35,17 +37,16 @@
 	responseData=[[NSMutableData alloc] init];
 	baseURL = [[NSURL URLWithString:@"http://www.forismatic.com/api/1.0/"] retain];
 	timer = [NSTimer scheduledTimerWithTimeInterval:[updateInterval intValue] target:self selector:@selector(newQuote:) userInfo:nil repeats:YES];
-	
 	NSURL *url=[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"icon" ofType:@"png"]];
 	icon=[[NSData alloc] initWithContentsOfURL:url];
 	[GrowlApplicationBridge setGrowlDelegate:self];
+	history=[[NSMutableArray alloc] init];
 	[self addObserver:self forKeyPath:@"self.updateInterval" options:0 context:nil];
-	
 }
--(void)newQuote:(id)sender {
+- (void)newQuote:(id)sender {
 	[self loadQuote];
 }
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
 	if ([keyPath isEqualToString:@"self.updateInterval"]) {
 		[timer invalidate];
 		timer = nil;
@@ -53,7 +54,7 @@
 		updateInterval=[NSNumber numberWithInt:1];[[NSUserDefaults standardUserDefaults] setObject:updateInterval forKey:@"updateInterval"];
 	}
 }
--(IBAction)toogleAutoupdate:(id)sender {
+- (IBAction)toogleAutoupdate:(id)sender {
 	if(timer) {
 		[timer invalidate];
 		timer = nil;
@@ -63,10 +64,10 @@
 		[toogleAutoUpdateItem setTitle:@"Стоп автоапдейт"];
 	}
 }
--(IBAction)exitApp:(id)sender {
+- (IBAction)exitApp:(id)sender {
 	exit(0);
 }
--(IBAction)snowSettings:(id)sender {
+- (IBAction)snowSettings:(id)sender {
     if (!settingsController) {
 		settingsController = [[SettingsController alloc] init];
 		[settingsController setUpdateInterval:updateInterval];
@@ -74,7 +75,7 @@
     }
     [settingsController showWindow:self];
 }
--(void)showQuote:(NSString*)quote Author:(NSString*)author {
+- (void)showQuote:(NSString*)quote Author:(NSString*)author {
 	NSDictionary *context=[NSDictionary dictionaryWithObjectsAndKeys:quote,@"quote",author,@"author",nil];
 	[GrowlApplicationBridge
 	 notifyWithTitle:author
@@ -84,8 +85,35 @@
 	 priority:0
 	 isSticky:NO
 	 clickContext:context];
+	[history addObject:context];
+	if ([history count]>10) {
+		[history removeObjectAtIndex:0];
+	}
+	if ([[historyMenu itemArray] count]>12) {
+		[historyMenu removeItemAtIndex:10];
+	}
+	NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+	[style setLineBreakMode:NSLineBreakByWordWrapping];
+	[style setAlignment:NSLeftTextAlignment];
+	
+	NSMutableAttributedString *attributedTitle = [[NSMutableAttributedString alloc] initWithString: quote
+										   attributes:[NSDictionary dictionaryWithObjectsAndKeys:
+													   style,NSParagraphStyleAttributeName,nil]];
+	NSMenuItem *histItem=[[NSMenuItem alloc] initWithTitle:quote action:@selector(showQuoteHistory:) keyEquivalent:@""];
+	[histItem setAttributedTitle:attributedTitle];
+	[histItem setEnabled:YES];
+	[histItem setTarget:self];
+	[histItem setTag:[history count]-1];
+	[historyMenu insertItem:histItem atIndex:0];
 }
--(IBAction)updateQuotes:(id)sender {
+- (void)showQuoteHistory:(id)sender {
+	int index=[sender tag];
+	[self openQuoteWindow:[history objectAtIndex:index]];
+}
+- (IBAction)showHistory:(id)sender {
+  
+}
+- (IBAction)updateQuotes:(id)sender {
 	[self loadQuote];
 }
 -(void)loadQuote {
@@ -118,13 +146,16 @@
 	
 	[request setHTTPBody:requestBodyData];
 	
-    NSURLConnection *con=[[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [[NSURLConnection alloc] initWithRequest:request delegate:self];
 }
-- (void)growlNotificationWasClicked:(id)clickContext {
+- (void)openQuoteWindow:(id)clickContext {
 	QuoteController *quoteController=[[QuoteController alloc] init];
 	[quoteController setQuote:[clickContext valueForKey:@"quote"]];
 	[quoteController setAuthor:[clickContext valueForKey:@"author"]];
     [quoteController showWindow:self];
+}
+- (void)growlNotificationWasClicked:(id)clickContext {
+	[self openQuoteWindow:clickContext];
 }
 - (NSURLRequest *)connection:(NSURLConnection *)connection
 			 willSendRequest:(NSURLRequest *)request
@@ -151,8 +182,7 @@
 {
 	NSError *error;
 	NSString *string = [[NSString alloc] initWithData:responseData 
-											 encoding:NSUTF8StringEncoding];
-	NSLog(@"%@",string);
+											 encoding:NSUTF8StringEncoding]; 
 	NSXMLDocument *document =[[NSXMLDocument alloc] initWithXMLString:string options:NSXMLDocumentTidyXML error:&error];
 	
 	NSXMLElement *rootNode = [document rootElement];

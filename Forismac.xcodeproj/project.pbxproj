@@ -141,16 +141,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AD7405751080824E00248233 /* forismac.icns */,
-				AD740561108080D300248233 /* icon.png */,
-				AD74054A10807F7200248233 /* Forismac-24i.png */,
-				AD74052C10807E3F00248233 /* Forismac-24.png */,
+				AD87401D1081073D00E61BA1 /* Images */,
 				8D1107310486CEB800E47090 /* Forismac-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
-				ADBB7F62107E10A900C00CE1 /* Settings.xib */,
+				AD87401E1081074500E61BA1 /* Nibs */,
 				ADBB7FC3107E172000C00CE1 /* Growl Registration Ticket.growlRegDict */,
-				AD7405F310808E3A00248233 /* Quote.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -163,6 +158,27 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD87401D1081073D00E61BA1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AD7405751080824E00248233 /* forismac.icns */,
+				AD740561108080D300248233 /* icon.png */,
+				AD74054A10807F7200248233 /* Forismac-24i.png */,
+				AD74052C10807E3F00248233 /* Forismac-24.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		AD87401E1081074500E61BA1 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				ADBB7F62107E10A900C00CE1 /* Settings.xib */,
+				AD7405F310808E3A00248233 /* Quote.xib */,
+			);
+			name = Nibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -19,6 +19,7 @@
 
 {
 	NSMenu *menu;
+	NSMenu *historyMenu;
 	NSStatusItem *statusItem;
 	NSData *icon;
 	NSNumber *updateInterval;
@@ -27,9 +28,12 @@
 	NSURL *baseURL;
 	NSMenuItem *toogleAutoUpdateItem;
 	SettingsController *settingsController;
+	NSMutableArray *history;
 }
-@property(assign) IBOutlet NSMenu *menu;
+@property(retain) NSMutableArray *history;
 @property(retain) NSStatusItem *statusItem;
+@property(retain) IBOutlet NSMenu *menu;
+@property(retain) IBOutlet NSMenu *historyMenu;
 @property(retain) NSData *icon;
 @property(retain) NSTimer *timer;
 @property(retain) NSNumber *updateInterval;
@@ -40,4 +44,5 @@
 -(IBAction)updateQuotes:(id)sender;
 -(IBAction)toogleAutoupdate:(id)sender;
 -(void)loadQuote;
+-(IBAction)showHistory:(id)sender;
 @end
